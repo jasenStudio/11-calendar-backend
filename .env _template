@@ -1,3 +1,0 @@
-PORT=puerto
-BD_CNN=bd
-SECRET_JWT_SEED=la clave.
