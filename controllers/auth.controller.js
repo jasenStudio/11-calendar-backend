@@ -87,7 +87,7 @@ const loginUser = async (req,res = response)=>{
     res.json({
             ok:true,
             uid: user.id,
-            name: user.name.User,
+            name: user.name,
             token: token
     })
 
@@ -114,6 +114,8 @@ const validateToken = async (req,res = response )=>{
 
     res.json({
         ok:true,
+        uid:req.uid,
+        name:name,
         token: token
     })
 }
